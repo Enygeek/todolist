@@ -8,6 +8,7 @@ class App extends React.Component{
         return(
             <section id="todo">
                 <h1 className="m-3">Liste de tâches</h1>
+                // Display ToDoList
                 <ToDoList/>
                 <footer className="d-flex justify-content-between bg-secondary p-3" id="mainFooter">
                     <div className="btn-group">
