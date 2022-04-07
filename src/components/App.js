@@ -1,6 +1,6 @@
 import React from 'react'
-import {FaListAlt, FaCheckSquare, FaPlusSquare, FaTrash} from 'react-icons/fa'
 import ToDoList from "./ToDoList";
+import NavBar from "./NavBar";
 
 
 class App extends React.Component{
@@ -8,16 +8,8 @@ class App extends React.Component{
         return(
             <section id="todo">
                 <h1 className="m-3">Liste de tâches</h1>
-                // Display ToDoList
                 <ToDoList/>
-                <footer className="d-flex justify-content-between bg-secondary p-3" id="mainFooter">
-                    <div className="btn-group">
-                        <a href="#" className="btn btn-outline-dark bg-light"><FaListAlt /></a>
-                        <a href="#" className="btn btn-outline-dark bg-light">< FaCheckSquare /></a>
-                        <a href="#" className="btn btn-outline-dark bg-light"><FaPlusSquare /></a>
-                    </div>
-                    <button className="btn btn-outline-dark bg-light"><FaTrash /></button>
-                </footer>
+                <NavBar/>
             </section>
         )
     }
